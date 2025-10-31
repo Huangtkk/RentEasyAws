@@ -1,0 +1,37 @@
+<section id="princi">
+    <br>
+    <div class="container overflow-hidden" id="gestiones">
+        <div class="row gx-5">
+            <div class="col-3">
+                <div (click)="CargarRVehiculo()" class="p-3 border bg-light text-center hover-effect"><h5>Registrar Vehiculos</h5></div>
+                <div (click)="CargarRCliente()"class="p-3 border bg-light text-center hover-effect"><h5>Registrar Clientes</h5></div>
+                <div (click)="CargarRCategorias()"class="p-3 border bg-light text-center hover-effect"><h5>Registrar Categoria</h5></div>
+                <div *ngIf="TipoEmpleado === 'EA'" (click)=" CargarREmpleado()"class="p-3 border bg-light text-center hover-effect"><h5>Registrar Empleados</h5></div>
+                <div *ngIf="TipoEmpleado === 'EA'" (click)=" CargarRCargo()"class="p-3 border bg-light text-center hover-effect"><h5>Registrar Cargos</h5></div>
+                <div (click)="CargarRTarifas()"class="p-3 border bg-light text-center hover-effect"><h5>Registrar Tarifa</h5></div>
+                <div (click)="CargarRAlquiler()"class="p-3 border bg-light text-center hover-effect"><h5>Registrar Alquiler</h5></div>
+                <div (click)=" CargarIConsulta()"class="p-3 border bg-light text-center hover-effect"><h5>Gestion Avanzada</h5></div>
+            </div>
+        </div>
+    </div>
+    <div id="Contenedor">
+        <!-- este es el contenedor -->
+        <div class="container" >
+            <div class="row">
+                <div class="col" id="Contenedor">
+                    <div class="empty-box d-grid gap-1 col-80 mx-auto" >
+                        <app-vehiculo *ngIf="MostrarComponenteRVehiculo"></app-vehiculo>
+                        <app-registro *ngIf="MostrarComponenteRCliente"></app-registro>
+                        <app-tipo-vehiculo *ngIf="MostrarComponenteRCategorias"></app-tipo-vehiculo>
+                        <app-registroempleados *ngIf="MostrarComponenteREmpleado"></app-registroempleados>
+                        <app-cargos *ngIf="MostrarComponenteRCargo"></app-cargos>
+                        <app-tarifa *ngIf="MostrarComponenteRTarifas"></app-tarifa>
+                        <app-alquiler *ngIf="MostrarComponenteRAlquiler"></app-alquiler>
+                        <app-interfaz-consulta *ngIf="MostrarComponenteIConsulta"></app-interfaz-consulta>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>

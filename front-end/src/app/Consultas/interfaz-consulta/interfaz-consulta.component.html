@@ -1,0 +1,118 @@
+<div id="contenedor">
+  <div class="row">
+    <div class="col" id="Contenedor">
+      <div class="text-center">
+        <h1>CONSULTAS</h1>
+        <hr />
+      </div>
+      <div>
+        <h1>
+          <p>Busqueda</p>
+        </h1>
+      </div>
+      <div class="input-group mb-3">
+        <div class="col-2">
+          <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2"
+            [placeholder]="PlaceHolderPorTipo" [(ngModel)]="BuscarPorTipo" />
+        </div>
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary rounded" type="button" (click)="BuscandoPorTipo()">Buscar</button>
+        </div>
+
+        <!-- checkbox-group.component.html -->
+        
+      <div *ngIf="mostrarCheckboxes" class="row">
+        <div *ngFor="let option of options" class="check">
+          <label>
+            <input type="checkbox" [(ngModel)]="option.selected" (change)="handleChange(option)" />
+            {{ option.value }}
+          </label>
+        </div>
+      </div>
+
+      </div>
+      <br />
+      <br />
+      <br />
+      <button class="btn btn-primary" type="button" (click)="mostrarTablaConsulta('GK')" id="mover1">
+        Consulta Vehiculos
+      </button>
+      <button class="btn btn-primary" type="button" (click)="mostrarTablaConsulta('T')" id="mover2">
+        Consulta Tipo De Vehiculo
+      </button>
+      <button class="btn btn-primary" type="button" (click)="mostrarTablaConsulta('C')" id="mover3">
+        Consulta Clientes
+      </button>
+      <button *ngIf="TipoEmpleado === 'EA'" class="btn btn-primary" type="button" (click)="mostrarTablaConsulta('CA')"
+        id="mover7">
+        Consultas Cargo
+      </button>
+      <button class="btn btn-primary" type="button" (click)="mostrarTablaConsulta('TA')" id="mover5">
+        Consulta Tarifa
+      </button>
+      <button class="btn btn-primary" type="button" (click)="mostrarTablaConsulta('M')" id="mover6">
+        Consulta Marcas
+      </button>
+
+      <button class="btn btn-primary" type="button" (click)="mostrarTablaConsulta('GG')" id="mover4">
+        Consulta Alquileres
+      </button>
+
+      <button *ngIf="TipoEmpleado === 'EA'" class="btn btn-primary" type="button" (click)="mostrarTablaConsulta('EM')"
+        id="mover8">
+        Consultar Empleados
+      </button>
+      <button  *ngIf="TipoEmpleado === 'EA'" class="btn btn-primary" type="button" (click)="mostrarTablaConsulta('IF')"
+        id="mover9">
+        Informes
+      </button>
+      
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <table class="table table-striped" *ngIf="mostrarTabla">
+        <thead>
+          <tr>
+            <th>Seleccionar</th>
+
+            <th *ngFor="let columna of ColumnasOrden">
+              {{ ColumnasNombres[columna] }}
+            </th>
+
+            <!--con keyvalue obtengo las propiedades y con marca.key obtengo el nombre de esas cabeceras-->
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- Itera sobre los datos y las propiedades para generar las filas y celdas -->
+          <tr *ngFor="let InfoDB of InfoTabla" [style.backgroundColor]="
+              InfoDB === FilaSeleccionada ? 'red' : 'inherit'
+            ">
+            <td>
+              <input type="checkbox" [checked]="InfoDB === FilaSeleccionada" (change)="seleccionarFila(InfoDB)" class="check" />
+            </td>
+
+            <td *ngFor="let columna of ColumnasOrden" contenteditable="true" (input)="AlmacenarFila($event, InfoDB)"
+              [attr.data-columna]="columna">
+              {{ formatearValor(InfoDB[columna], columna) }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row mt-3" *ngIf=" mostrarBotonesActuEliminar">
+    <div class="col text-center">
+      <button (click)="ActualizarDatos()" type="button" class="btn btn-info mx-2" *ngIf="mostrarTabla">
+        Actualizar
+      </button>
+      <button (click)="EliminarDatos()" type="button" class="btn btn-danger mx-2" *ngIf="mostrarTabla">
+        Eliminar
+      </button>
+    </div>
+  </div>
+</div>

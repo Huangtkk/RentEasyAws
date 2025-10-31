@@ -1,0 +1,39 @@
+#img {
+  background-image: url('https://th.bing.com/th/id/R.2b17bd5a1e2ea8a2d01fccfe05c1beb3?rik=ukTzU%2bH7kw0Pcw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-8LEUPCAUgpo%2fT1072Y5VutI%2fAAAAAAAAWNw%2fNq7I97REhMI%2fs1600%2fImagenes-de-Carros-Deportivos_02.jpg&ehk=8lNVNnPV75lZCVAEPxsRaet86X4UXwknZg7p2RbtORs%3d&risl=&pid=ImgRaw&r=0');
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-repeat: repeat-y;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+  
+  height: 100%; /* Ajusta la altura al 100% de la ventana */
+}
+
+body, html {
+  margin: 0;
+}
+
+.card {
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9); /* Ajusta el fondo del card según tus preferencias */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra al card si lo deseas */
+  max-width: auto; /* Ajusta el ancho máximo según tus preferencias */
+    height: auto; 
+}
+
+/* Elimina los márgenes en los elementos del formulario */
+.form-outline {
+  margin-bottom: 0; /* Elimina el margen inferior en los campos del formulario */
+}
+
+/* Estilo personalizado para el campo "Tipo de Cliente" */
+#Tipo_Cliente {
+  width: 100%;
+  font-size: 1rem;
+}
+
+
+
+
+

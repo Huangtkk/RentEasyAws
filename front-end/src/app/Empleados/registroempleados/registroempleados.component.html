@@ -1,0 +1,47 @@
+<section id="img">
+
+
+    <div class="container bg-white w-50 h-50" id="test">
+      <div class="row justify-content-center align-items-center " style="height: 100vh;">
+        <div class="col-md-7">
+          <div class="text-center mb-4">
+            <img src="assets/Trabajador.jpg" alt="Logo de la empresa" class="img-fluid rounded-image w-50 h-30 ">
+            <br>
+            <br>
+            <h6>Bienvenido a tu viaje</h6>
+            <h2>Registro de Empleado</h2>
+  
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" [(ngModel)]="Empleados.Correo"required >
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id=password name="password" placeholder="Ingresa tu contraseña" [(ngModel)]="Empleados.Clave" required>
+            </div>
+
+            <div class="form-outline mb-2">
+              <div>
+                <label for="Cargo" class="form-label" >Cargos</label>
+              </div>
+              
+              <select class="form-control form-control-lg w-100" id="Cargo" name="cargo" [(ngModel)]="Empleados.Id_Cargo">
+                <option *ngFor="let Cargo of Cargos" [value]="Cargo.Id_Cargo">{{ Cargo.Nombre }}</option>
+              </select>
+              
+              <br>
+            </div>
+            <button (click)="AgregarEmpleado()" type="submit" class="btn btn-primary btn-block">Registrar</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  

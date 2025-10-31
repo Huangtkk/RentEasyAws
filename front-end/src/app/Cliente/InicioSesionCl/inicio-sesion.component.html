@@ -1,0 +1,38 @@
+
+<section id="img">
+    
+    
+      <div class="container w-50 h-50" id="test">
+        <div class="row justify-content-center align-items-center " style="height: 100vh;">
+            <div class="col-md-7">
+                    <div class="text-center mb-4">
+                    <img src="assets/LogoRentEasy.jpeg" alt="Logo de la empresa"  class="img-fluid rounded-image w-50 h-30 ">
+                    <br>
+                    <br>
+                      <h6>Bienvenido a tu viaje</h6>
+                      <h2>Iniciar Sesión</h2>
+                
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" [(ngModel)]="Clientes.Correo" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label" >Contraseña</label>
+                      <input type="password" class="form-control" id=password name="password" placeholder="Ingresa tu contraseña" [(ngModel)]="Clientes.Contrasena" required>
+                    </div>
+                    <div class="form-group">
+                        
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" (click)="BuscarCliente()">Iniciar Sesión</button>
+                    <a href="#" class="btn btn-link btn-block">¿No tienes una cuenta?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+    
+
+

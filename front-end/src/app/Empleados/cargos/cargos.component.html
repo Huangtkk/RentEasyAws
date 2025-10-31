@@ -1,0 +1,22 @@
+
+<div class="empty-box d-grid gap-1   " id="fondoCargo">
+    <img src="assets/FondoCargo.png" alt="Logo de la empresa" class="img-fluid" id="imagen">
+    <h1>Gestion Cargos</h1>
+    <div>
+        <div class="mover-con">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" [(ngModel)]="Cargo.Nombre" name="Nombre">
+                <label for="floatingInput" ><p>Nombre</p></label>
+            </div>
+            <div class="form-check" id="check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" (change)="onCheckboxChange($event)">
+                <label class="form-check-label" for="defaultCheck1">
+                  <h5>Administrador</h5>
+                </label>
+              </div>
+            <button (click)="AgregarCargo()" type="button" class="btn btn-light" style="color: #333;"> + Adicionar</button>
+        </div>
+    </div>
+    
+    
+</div>

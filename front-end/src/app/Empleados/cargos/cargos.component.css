@@ -1,0 +1,104 @@
+#gestiones{
+    position: absolute;
+
+}
+
+.hover-effect:hover {
+    color: #007bff;
+    cursor: pointer; 
+    background-color: aqua;
+}
+.empty-box {
+    width: 1590px; 
+    height: 400px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    text-align: center;
+    border: 2px solid gray;
+    padding: 360px;
+}
+
+
+.footer-text {
+   font-size: 20px;
+}
+
+#header{
+   height: 80px;
+}
+
+
+.mover-con{
+   position: absolute;
+    top:270px;
+    right: 850px;
+    width: 20%;
+}
+
+#check{
+   position: absolute;
+   top: 100px;
+   left: 10px;
+}
+
+
+
+.btn{
+  
+   border:  1px solid #ccc;
+   position: absolute;
+   left: 10px;
+   top: 130px;
+}
+
+.mover-con{
+   border: #ccc solid 6px;
+   background-color: whitesmoke;
+   height: 200px;
+   border-radius: 10px;
+   padding: 12px;
+   top: 400px;
+   width: 400px;
+   right: 600px;
+}
+
+#fondoCargo {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   
+}
+
+#imagen {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+
+
+}
+
+.footer-text {
+   font-size: 20px;
+}
+
+label p{
+   position: absolute;
+   top: 55px;
+   right: 320px;
+}
+
+h1{
+   font-family: 'Times New Roman', Times, serif;
+   border-radius: 10px;
+   border: 2px solid white;
+   color: rgb(17, 14, 11);
+   position: absolute;
+   background-color: white;
+   top: 330px;
+   right: 750px;
+}

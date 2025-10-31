@@ -1,0 +1,195 @@
+#principal {
+  background-color: #A9A9A9;
+  overflow-x: auto;
+}
+
+h1 {
+  color: #F5F7F8;
+
+}
+
+h6 {
+  color: #DDE6ED;
+  font-weight: bold;
+}
+
+.img-fluid {
+  max-width: 50%;
+  height: auto;
+}
+
+.container-fluid {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Agrega estilos personalizados para ajustar el tamaño de las imágenes */
+.vehiculo-img {
+  max-width: 30%; 
+  height: auto; 
+}
+
+.vehiculo-col{
+  margin-right: 0; 
+  margin-left: 100px; 
+}
+
+.row {
+  margin-right: 20%; 
+  margin-left: 0;
+ 
+}
+
+#Reservatext,ReservaButton{
+  margin-left: 30px;
+}
+
+.col-auto {
+  
+  margin-right: 0;
+  margin-left: 0;
+  
+}
+
+#inputtext{
+  position: relative;
+  bottom: 35px;
+  width: 10%;
+  left: 200px;
+  
+}
+
+#moverboton{
+  position: relative;
+  bottom:74px;
+  left: 382px;
+}
+
+#encuentra{
+  position: relative;
+  left: 220px;
+  bottom: 40px;
+}
+
+#carros{
+  position: relative;
+  left: 280px;
+}
+
+#botonnose{
+  position: relative;
+  bottom: 10px;
+  left: 350px;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0px  0px 40px 0px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#botonnose:hover{
+  background-color: seagreen;
+}
+.icono-mas {
+  margin-left: 5px;
+}
+
+h2 {
+  color: whitesmoke;
+  font-size: 2em; 
+  font-weight: bold; 
+  margin-bottom: 20px; 
+  border: 2px solid whitesmoke; 
+  padding: 10px; 
+  display: inline-block; 
+  border-radius: 8px; 
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out; 
+  position: relative;
+  left: 400px;
+  top: 30px;
+  width: 40%;
+  background-color: gray;
+}
+
+hr{
+  border: 2px solid gray;
+}
+
+
+h2:hover {
+  color: #e74c3c; 
+  border-color: #e74c3c; 
+}
+
+
+
+ .vehiculo-container {
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: gray;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+}
+
+.vehiculo-container:hover {
+  transform: scale(1.05);
+}
+
+.vehiculo-img {
+  width: 100%;
+  height: auto;
+  max-width: 0%;
+  
+  
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#Reservatext{
+  position: relative;
+  left: 60px;
+ }
+
+ 
+ 
+h5{
+  position: relative;
+  left: 90px;
+   
+}
+
+
+#Rerever{
+  position: relative;
+ 
+}
+
+.row {
+  margin-top: 20px;
+}
+
+
+@media (max-width: 767px) {
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+} 
+
+
+
+
+
+#carros {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+

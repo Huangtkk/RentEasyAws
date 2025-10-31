@@ -1,0 +1,93 @@
+<section class="h-100 bg-dark">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card card-registration my-4">
+          <div class="row g-0">
+            <div class="col-xl-6 d-none d-xl-block">
+              <label class="form-label" for="Imagen">Seleccione Una Imagen Tipo .Png</label>
+              <input type="file" id="Imagen" class="form-control mb-4" (change)="handleImageUpload($event)" />
+              <img [src]="Vehiculo.Url" alt="imagenCargada" style="max-width: 100%; height: 80%;">
+            </div>
+
+            <div class="col-xl-6">
+              <div class="card-body p-md-5 text-black">
+                <h3 class="mb-5 text-uppercase">Registro De Vehiculo</h3>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="Placa" class="form-control form-control-lg" [(ngModel)]="Vehiculo.Placa" />
+                      <label class="form-label" for="Placa">Placa</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <div class="col-md-9 mb-3">
+
+                        <select class="select form-select py-2" id="Tipo_Vehiculo"
+                          [(ngModel)]="Vehiculo.Id_Tipovehiculo">
+                          <ng-container *ngFor="let TipoVehiculo of TipoVehiculos">
+                            <option [value]="TipoVehiculo.Id">{{ TipoVehiculo.Nombre }}</option>
+                          </ng-container>
+                        </select>
+                        <br>
+                        <label class="form-label" for="Tipo_Vehiculo"> Tipo De Vehiculo</label>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="Modelo" class="form-control form-control-lg"
+                        [(ngModel)]="Vehiculo.Modelo" placeholder="Nombre Modelo" />
+                      <label class="form-label" for="Modelo">Modelo</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <div class="col-md-9 mb-3">
+
+                        <select class="select form-select py-2" id="Marca" [(ngModel)]="Vehiculo.Id_Marca">
+                          <ng-container *ngFor="let Marca of Marcas">
+                            <option [value]="Marca.Id_Marca">{{ Marca.Nombre }}</option>
+                          </ng-container>
+                        </select>
+                        <br>
+                        <label class="form-label" for="Marca"> Marca</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-outline mb-4">
+                  <select class="form-control form-control-lg" id="Tarifa" [(ngModel)]="Vehiculo.Id_Tarifas">
+                    <ng-container *ngFor="let Tarifa of Tarifas">
+                      <option [value]="Tarifa.Id">{{ Tarifa.Nombre}}</option>
+                    </ng-container>
+                  </select>
+                  <div class="year">
+                    <input type="text" id="year" class="form-control form-control-lg" [(ngModel)]="Vehiculo.Year"/>
+                    <label class="form-label" >Año</label>
+                  </div>
+                  <label class="form-label" for="Tarifa">Tarifa</label>
+                </div>
+
+
+                <div class="d-flex justify-content-center pt-3">
+                  <button type="button" class="btn btn-light btn-lg" (click)="reiniciarDatos()">Reiniciar</button>
+                  <button (click)="AgregarVehiculo()"  type="button"
+                    class="btn btn-warning btn-lg ms-2">Registrar</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

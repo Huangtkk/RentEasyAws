@@ -1,0 +1,73 @@
+<section id="ContenedorPrincipal" class="bg-dark">
+    <div class="container contact">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="contact-info">
+                    <img src="assets/new-logo.png" alt="image" id="imgalquiler" />
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Renta De Vehiculo</h2>
+                    <h4>Tu libertad sobre ruedas</h4>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="fEmision">Fecha de Emision </label>
+                        <div class="col-sm-10">
+                            <input type="Date" class="form-control" id="fEmision" name="fEmision" [(ngModel)]="Alquiler.Fecha_Emision">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="fRecepcion">Fecha de Finalizacion </label>
+                        <div class="col-sm-10">
+                            <input type="Date" class="form-control" id="fRecepcion" name="fRecepcion" [(ngModel)]="Alquiler.Fecha_Contrato">
+                        </div>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="KmEmision">Kilometros de Emision</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="KmEmision" name="KmEmision" [(ngModel)]="Alquiler.KmEmision">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="PlacaVehiculo">Placa de Vehiculo</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="BusquedaPlaca" name="BusquedaPlaca" [(ngModel)]="BuscarPorPlaca" (input)="CargarVehiculo()"
+                                placeholder="Digite la placa">
+                                <select class="select form-select py-2" id="placa" [(ngModel)]="Alquiler.Placa_Vehiculo">
+                                    <ng-container *ngFor="let placa of Vehiculos">
+                                      <option [value]="placa.Placa">{{ placa.Placa }}</option>
+                                    </ng-container>
+                                  </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="CedulaCliente">Cedula de Cliente</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="CedulaCliente" name="CedulaCliente" [(ngModel)]="BuscarPorCedula" (input)="CargarCliente()"
+                                placeholder="Digite la Cedula">
+                                <select class="select form-select py-2" id="placa" [(ngModel)]="Alquiler.Cc_Clientes">
+                                    <ng-container *ngFor="let cliente of Clientes">
+                                      <option [value]="cliente.Cc">{{ cliente.Cc }}</option>
+                                    </ng-container>
+                                  </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button (click)="RegistrarAlquiler()" type="submit" class="btn btn-default">Registrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>

@@ -1,0 +1,28 @@
+"filename", "language", "JavaScript", "JSON", "YAML", "CSS", "HTML", "Properties", "comment", "blank", "total"
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\.env", "Properties", 0, 0, 0, 0, 0, 4, 0, 2, 6
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\Controllers\GestionAlquiler.js", "JavaScript", 167, 0, 0, 0, 0, 0, 2, 106, 275
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\Controllers\GestionCargos.js", "JavaScript", 80, 0, 0, 0, 0, 0, 0, 44, 124
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\Controllers\GestionCliente.js", "JavaScript", 142, 0, 0, 0, 0, 0, 0, 86, 228
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\Controllers\GestionEmpleado.js", "JavaScript", 101, 0, 0, 0, 0, 0, 1, 47, 149
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\Controllers\GestionMarca.js", "JavaScript", 73, 0, 0, 0, 0, 0, 0, 42, 115
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\Controllers\GestionReserva.js", "JavaScript", 62, 0, 0, 0, 0, 0, 0, 34, 96
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\Controllers\GestionTarifa.js", "JavaScript", 61, 0, 0, 0, 0, 0, 0, 37, 98
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\Controllers\GestionTipoVehiculo.js", "JavaScript", 74, 0, 0, 0, 0, 0, 0, 39, 113
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\Controllers\GestionVehiculo.js", "JavaScript", 100, 0, 0, 0, 0, 0, 0, 64, 164
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\app.js", "JavaScript", 67, 0, 0, 0, 0, 0, 0, 37, 104
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\db.js", "JavaScript", 18, 0, 0, 0, 0, 0, 0, 9, 27
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\package-lock.json", "JSON", 0, 836, 0, 0, 0, 0, 0, 1, 837
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\package.json", "JSON", 0, 21, 0, 0, 0, 0, 0, 1, 22
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\public\index.html", "HTML", 0, 0, 0, 0, 11, 0, 0, 1, 12
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\public\styles.css", "CSS", 0, 0, 0, 3, 0, 0, 0, 0, 3
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\routes\GestionAlquileresRoutes.js", "JavaScript", 54, 0, 0, 0, 0, 0, 0, 52, 106
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\routes\GestionCargosRoutes.js", "JavaScript", 36, 0, 0, 0, 0, 0, 0, 34, 70
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\routes\GestionClientesRoutes.js", "JavaScript", 51, 0, 0, 0, 0, 0, 0, 56, 107
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\routes\GestionEmpleadosRoutes.js", "JavaScript", 44, 0, 0, 0, 0, 0, 0, 48, 92
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\routes\GestionMarcasRoutes.js", "JavaScript", 36, 0, 0, 0, 0, 0, 0, 37, 73
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\routes\GestionReservasRoutes.js", "JavaScript", 29, 0, 0, 0, 0, 0, 0, 31, 60
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\routes\GestionTarifasRoutes.js", "JavaScript", 32, 0, 0, 0, 0, 0, 0, 32, 64
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\routes\GestionTipoVehiculoRoutes.js", "JavaScript", 36, 0, 0, 0, 0, 0, 0, 37, 73
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\routes\GestionVehiculosRoutes.js", "JavaScript", 66, 0, 0, 0, 0, 0, 0, 54, 120
+"c:\Users\Zeus\Documents\Ingenieria de Sistemas\Quinto Semestre\Proyectos\RentEasy\Back-end\tests\config.yml", "YAML", 0, 0, 10, 0, 0, 0, 0, 3, 13
+"Total", "-", 1329, 857, 10, 3, 11, 4, 3, 934, 3151

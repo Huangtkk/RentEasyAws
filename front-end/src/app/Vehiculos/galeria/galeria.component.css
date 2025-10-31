@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.cmn-divfloat {
+    position: fixed !important;
+    bottom: 45px;
+    right: 15px;
+    display: none;
+}
+.cmn-btncircle {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 6px 0px;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#princi{
+    background-color: #A9A9A9;
+}
+
+button{
+    width: 20%;
+    position: relative;
+    top: 12px;
+}
+
+h5{
+  font-weight: bold;
+}
+
+img{
+   position: relative;
+   width: 40%;
+}
+
+.col-xl-3{
+    position: relative;
+    top: 100px;
+    
+}
+
+h2 {
+  color: whitesmoke;
+  font-size: 2em; 
+  font-weight: bold; 
+  text-align: center; 
+  text-transform: uppercase; 
+  margin-bottom: 20px; 
+  border: 2px solid whitesmoke; 
+  padding: 10px; 
+  display: inline-block; 
+  border-radius: 8px; 
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out; 
+  position: relative;
+  left: 800px;
+  top: 30px;
+  width: 20%;
+  background-color: gray;
+}
+
+hr{
+  border: 2px solid gray;
+}
+
+
+h2:hover {
+  color: #e74c3c; 
+  border-color: #e74c3c; 
+}
+
+
+  @keyframes scaleAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .animate-button {
+    animation: scaleAnimation 1s infinite;
+  }
+
+  #botonver{
+    position: relative;
+    margin-bottom: 50px;
+    right: 50px;
+    top: 30px;
+  }
+
+
+/* Estilo personalizado para el título */

@@ -1,0 +1,36 @@
+card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+
+    label[for="Tipo_Vehiculo"],
+    label[for="Marca"] {
+        margin-top: 10px; /* Ajusta el valor según el espacio deseado */
+    }
+    /* En el componente 'app-vehiculo', aplica estilos que le permitan expandirse y llenar el contenedor */
+app-vehiculo {
+    display: flex;
+    flex-direction: column; /* O elija la dirección adecuada según sus necesidades */
+    justify-content: space-between; /* Controla la distribución vertical */
+    align-items: center; /* Controla la alineación horizontal */
+    width: 100%; /* O la anchura deseada */
+    height: 100%; /* O la altura deseada */
+  }
+
+
+  #Tarifa{
+    width: 47%;
+  }
+  
+
+  .year{
+    width: 20%;
+    position: absolute;
+    left: 300px;
+    top: 368px;
+  }

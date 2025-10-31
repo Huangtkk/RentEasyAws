@@ -1,0 +1,40 @@
+<section class=" h-custom gradient-custom-2" >
+  <img src="assets/Categorias.png" alt="sinfoto" class="img-fluid">
+  <div class="container py-5 " >
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12" >
+        <h1>Gestion Categorias</h1>
+        <div class="card card-registration card-registration-2" style="border-radius: 15px;" id="contenedor-mover">
+          <div class="card-body p-0">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <h3 class="fw-normal mb-5" style="color: #4835d4;">Tipo de vehiculos</h3>
+
+                  
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                        <div class="mb-4 pb-2">
+                          <div class="form-outline form-white">
+                            <input type="text" id="inp" class="form-control form-control-lg" [(ngModel)]="TipoVehiculos.Nombre" Name="Nombre" />
+                          </div>
+                        </div>
+                        <button (click)="RegistrarTipoVehiculo()" type="button" class="btn btn-light btn-lg"
+                    data-mdb-ripple-color="dark" style="background-color: #4835d4; color: white;" id="boton"  >Register</button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Contendor de la derecha -->
+              <app-marca></app-marca>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

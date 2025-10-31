@@ -1,0 +1,52 @@
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    margin: 10px;
+    animation: bounce 1s infinite;
+  }
+  .card {
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s;
+  }
+
+  .rounded-image {
+    border-radius: 50%; 
+}
+  
+nav{
+  margin-top: -25px;
+}
+
+#img{
+    background-image: url('https://rentautosloki.com/wp-content/uploads/2022/09/renta-de-vehiculos-bogota-1-768x512.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+button{
+  position: relative;
+  width: 42%;
+  left: 140px;
+}
+
+#test{
+  background-color: #F0F0F0;
+}

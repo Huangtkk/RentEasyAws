@@ -1,0 +1,25 @@
+#gestiones{
+    position: absolute;
+    left:42px;
+    padding:500;
+    top:120px;
+
+}
+
+.hover-effect:hover {
+    color: #007bff;
+    cursor: pointer; 
+    background-color: aqua;
+}
+.empty-box {
+  
+   border: 2px solid gray;
+   height: 995px; /* Aumenta la altura del contenedor */
+  position:absolute;
+  width: 143%;
+  overflow: auto;
+}
+
+
+  
+

@@ -1,0 +1,65 @@
+<section class=" bg-image " id="img">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-1">
+        <div class="col-12 col-md-4 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-4">Crear Una Cuenta</h2>
+
+              <form>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="Nombre">Nombre Completo</label>
+                  <input type="text" id="Nombre" class="form-control form-control-sm" [(ngModel)]="Clientes.Nombre_Completo" name="Nombre_Completo"  />
+                 
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="cedula">Numero De Documento</label>
+                  <input type="text" id="Cedula" class="form-control form-control-sm" [(ngModel)]="Clientes.Cc" name="Cc"/>
+                 
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="Correo">Correo</label>
+                  <input type="email" id="Correo" class="form-control form-control-sm" [(ngModel)]="Clientes.Correo" name="Correo" required />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="Contraseña">Contraseña</label>
+                  <input type="password" id="Contraseña" class="form-control form-control-sm" [(ngModel)]="Clientes.Contrasena" name="Contrasena" required />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="Telefono">Telefono</label>
+                  <input type="text" id="Telefono" class="form-control form-control-sm" [(ngModel)]="Clientes.Telefono" name="Telefono" required  />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="F_Nacimiento">Fecha de Nacimiento</label>
+                  <input type="date" id="F_Nacimiento" class="form-control form-control-sm" [(ngModel)]="Clientes.Fecha_Nacimiento" name="Fecha_Nacimiento" />
+                </div>
+
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="N_Licencia">Numero de Licencia</label>
+                  <input type="text" id="N_Licencia" class="form-control form-control-sm" [(ngModel)]="Clientes.N_Licencia" name="N_Licencia" required />
+                </div>
+
+
+                <div class= "justify-content-center">
+                  <button (click)="AgregarCliente()" type="button"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Registrar</button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

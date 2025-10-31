@@ -1,0 +1,41 @@
+<div class="container-fluid ps-md-0">
+    <div class="row g-0">
+      <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+      <div class="col-md-8 col-lg-6">
+        <div class="login d-flex align-items-center py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
+                <h3 class="login-heading mb-4">TARIFAS</h3>
+  
+                <!-- Sign In Form -->
+                <form>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="Tipo_Tarifa" placeholder="Tarifa para camionetas..." [(ngModel)]="Tarifa.Nombre" name="Nombre">
+                    <label for="Tipo_Tarifa">Tipo De Tarifa</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="Precio" [(ngModel)]="Tarifa.Precio" name="Precio" >
+                    <label for="Precio">Precio</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="Precio_Dia"  [(ngModel)]="Tarifa.ValorDia" name="ValorDia">
+                    <label for="Precio_Dia">Valor por Dia</label>
+                  </div>
+  
+                
+  
+                  <div class="d-grid">
+                    <button (click)="RegistrarTarifa()"class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Registrar</button>
+                   
+                  </div>
+  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
