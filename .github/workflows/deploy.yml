@@ -25,9 +25,9 @@ jobs:
         username: ubuntu
         key: ${{ secrets.EC2_KEY }}
         script: |
-          docker stop mi-frontend-container || true
-          docker rm mi-frontend-container || true
-          docker stop mi-backend-container || true
-          docker rm mi-backend-container || true
-          docker run -d -p 3000:80 --name mi-frontend-container mi-frontend
-          docker run -d -p 5000:5000 --name mi-backend-container mi-backend
+          sudo docker stop mi-frontend-container || true
+          sudo docker rm mi-frontend-container || true
+          sudo docker stop mi-backend-container || true
+          sudo docker rm mi-backend-container || true
+          sudo docker run -d -p 3000:80 --name mi-frontend-container mi-frontend
+          sudo docker run -d -p 5000:5000 --name mi-backend-container mi-backend
