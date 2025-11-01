@@ -15,7 +15,7 @@ jobs:
 
     - name: Build Docker images
       run: |
-        docker build -t mi-backend ./back-end
+        docker build -t mi-backend ./Back-end
         docker build -t mi-frontend ./front-end
         
 
