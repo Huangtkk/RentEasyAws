@@ -15,8 +15,9 @@ jobs:
 
     - name: Build Docker images
       run: |
-        docker build -t mi-backend ./Back-end
-        docker build -t mi-frontend ./front-end
+        docker build --no-cache -t mi-backend ./Back-end
+        docker build --no-cache -t mi-frontend ./front-end
+
         
 
     - name: Deploy to EC2
