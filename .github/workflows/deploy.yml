@@ -15,8 +15,8 @@ jobs:
 
     - name: Build Docker images
       run: |
-        docker build -t mi-frontend ./frontend
-        docker build -t mi-backend ./backend
+        docker build -t mi-frontend ./front-end
+        docker build -t mi-backend ./Back-end
 
     - name: Deploy to EC2
       uses: appleboy/ssh-action@v0.1.7
