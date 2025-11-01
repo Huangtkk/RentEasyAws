@@ -30,6 +30,6 @@ jobs:
           sudo docker rm mi-frontend-container || true
           sudo docker stop mi-backend-container || true
           sudo docker rm mi-backend-container || true
-          sudo docker run -d -p 5000:5000 --name mi-backend-container mi-backend
-          sudo docker run -d -p 3000:80 --name mi-frontend-container mi-frontend
+          sudo docker run -d -p 5000:5000 --name mi-backend-container --network mi-red mi-backend
+          sudo docker run -d -p 3000:80 --name mi-frontend-container --network mi-red mi-frontend
 
