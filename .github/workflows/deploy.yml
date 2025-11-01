@@ -15,8 +15,9 @@ jobs:
 
     - name: Build Docker images
       run: |
+        docker build -t mi-backend ./back-end
         docker build -t mi-frontend ./front-end
-        docker build -t mi-backend ./Back-end
+        
 
     - name: Deploy to EC2
       uses: appleboy/ssh-action@v0.1.7
@@ -29,5 +30,6 @@ jobs:
           sudo docker rm mi-frontend-container || true
           sudo docker stop mi-backend-container || true
           sudo docker rm mi-backend-container || true
-          sudo docker run -d -p 3000:80 --name mi-frontend-container mi-frontend
           sudo docker run -d -p 5000:5000 --name mi-backend-container mi-backend
+          sudo docker run -d -p 3000:80 --name mi-frontend-container mi-frontend
+
